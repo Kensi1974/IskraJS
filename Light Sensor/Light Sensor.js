@@ -54,7 +54,7 @@ function play() {
       //print("Cleared");
     }
     i++;
-  }, 100); // 100msec bwtween each pitch
+  }, 100); // 100msec between each pitch
 }
 
 
