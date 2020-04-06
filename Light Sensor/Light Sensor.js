@@ -89,8 +89,7 @@ setInterval(function(){
 	//when dark is over make 1 pshik and arm the trigger, check battery level
 	if (Value<=Dark && Engaged == 1)
 	{
-		//print("Go");
-        Pshik();
+		Pshik();
 		setTimeout("Pshik()",Repeat);
         Engaged=0;
 	}
