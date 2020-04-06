@@ -76,15 +76,15 @@ setInterval(function(){
 	
 	Value=analogRead(SensorPin);	// reads light level
 	
-	
-	Battery=analogRead(A0);				// reads battery level
+		
+//*********************Debug lines start**********************************
+//These are debubug lines ony. Comment them if there is no need any more
+		Battery=analogRead(A0);				// reads battery level
 		Battery=Math.round(Battery*100);	// converts and rounds the battery level
 		print("Batery level is: ", Battery);
-	
-	
-	
-	print("Value :", Value, " Eng: ", Engaged);	
-	
+		print("Value :", Value, " Eng: ", Engaged);	
+//********************Debug lines finish**********************************
+
 	//if it becomes dark and the trigger is armed make 2 pshiks and disarm the trigger
 	//when dark is over make 1 pshik and arm the trigger, check battery level
 	if (Value<=Dark && Engaged == 1)
@@ -101,7 +101,7 @@ setInterval(function(){
 		
 		Battery=analogRead(A0);				// reads battery level
 		Battery=Math.round(Battery*100);	// converts and rounds the battery level
-		//print("Batery level is: ", Battery);
+		
 		//if Battery is below BatLow (expected to be 10%) plays melody
 		if(Battery<BatLow) play();
 	}
