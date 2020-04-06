@@ -1,4 +1,5 @@
 // Pinout:
+//
 // +3V - motor +pin
 // +5V - photo resistor pin 1
 // GRND1 - resistor 10K pin 1
@@ -8,6 +9,7 @@
 // Transistor C - motor -pin
 // GRND3 - Zummer-
 // C9	- Zummer+
+//
 
 
 var SensorPin=A1; 	// Light sensor pin
