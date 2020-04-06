@@ -1,5 +1,3 @@
-qqq
-
 // +3V - motor +pin
 // +5V - photo resistor pin 1
 // GRND1 - resistor 10K pin 1
