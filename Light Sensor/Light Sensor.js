@@ -1,4 +1,6 @@
 // Air fresher automotion
+
+
 // Pinout:
 //
 // +3V - motor +pin
@@ -18,7 +20,7 @@ var SensorPin=A1; 	// Light sensor pin
 var MotorPin=A10; 	// Transistor Base pin
 var ZummerPin=C9;	// Zummer pin
 var Repeat=3600;  	// Pause before the second pshik in dark mode
-var TimeOut=350;	// Pause between pshiks
+var TimeOut=350;	// Duration of a pshik
 var Wait=60000;		// How often the system wakes up
 var Dark=0.20;		// Level in SensorPin assumed to be darkenss
 var Value=0;		// Aux variable
